@@ -54,7 +54,7 @@ This Web app targets two categories of users: Students and Faculties.
 8. Individual view page
 <img width="706" alt="Screenshot 2023-04-01 at 11 13 32 PM" src="https://user-images.githubusercontent.com/96867564/229306605-31dc253e-593d-4623-8509-9f0c78561e4a.png">
 
-# This Web app is yet a live application
+# This Web app is not a live project
 
 # 🤝 Collaborators
-
+Yuvrajsinh0409
