@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pending upload page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/navbar.css">
+        <link rel="stylesheet" href="styles/all_cards.css">
+    </head>
+    <body>
+        <nav class="navbar" style="position: fixed;">
+            <div class="navbar-container">
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div> 
+                <ul class="menu-items">
+                    <li><a href="homepage.php">SP</a></li>
+                    <li><a href="tech_view.html" target="_blank">Technical</a></li><!--for student direct to upload section-->
+                    <li><a href="nontech_view.html" target="_blank">Non-Technical</a></li><!--onluy one li for upload in header (student)-->
+                    <li><a href="course_view.html" target="_blank">Online Course</a></li>
+                    <span class="right-section">
+                        <!-- <li><a href=#>Contact Us</a></li> -->
+                        <li><a href=# class="login-link">Logout</a></li><!-- make changes with php for logout-->
+                    </span>
+                </ul>
+            </div>
+        </nav>
+        <div class="backdrop">
+            <h1>Pending certificates</h1>
+    
+            <div class="display-certi">
+                    <div class="container">
+                        <article class="card shadow curve">
+                            <!-- <div> -->
+                              <img src="banners/banner_tech.png" alt="image"/>
+                            <!-- </div> -->
+                      
+                            <div>
+                              <p>21CSXXX</p>
+                                <a href="solo_view.php">View more</a>
+                            </div>
+                          </article>
+                          <article class="card shadow curve">
+                              <img src="banners/banner_nontech.png" alt="image">
+                            <div>
+                              <p>21CSXXX</p>
+                                <a href="solo_view.html">View more</a><!--direct to student personal view-->
+                            </div>
+                          </article>
+                          <article class="card shadow curve">
+                              <img src="banners/banner_course.png" alt="image">
+                            <div>
+                              <p>21CSXXX</p>
+                                <a href="#">view more</a>
+                            </div>
+                          </article>
+                          <article class="card shadow curve">
+                            <img src="banners/banner_nontech.png" alt="image">
+                          <div>
+                            <p>21CSXXX</p>
+                              <a href="solo_view.html">View more</a><!--direct to student personal view-->
+                          </div>
+                        </article>
+                        <article class="card shadow curve">
+                            <!-- <div> -->
+                              <img src="banners/banner_tech.png" alt="image">
+                            <!-- </div> -->
+                      
+                            <div>
+                              <p>21CSXXX</p>
+                                <a href="solo_view.html">View more</a>
+                            </div>
+                          </article>
+                    </div>
+                   
+            </div>        
+        </div>
+    </body>

@@ -1,0 +1,214 @@
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.popup-box{
+    display: none;
+    position: fixed;
+    top: 0vh;
+    left: 0vw;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    /* backdrop-filter: blur(10px); */
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* -------login pop up------------------------------ */
+.login-popup{
+    background-color: #ffffff;
+    width: 55vw;
+    height: 54vh;
+    margin: 0 auto;
+    position: absolute;
+    top: 25%;
+    left: 24%;
+    /* margin-top: 20vh; */
+    font-family: 'Barlow', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border-radius: 20px;
+    box-shadow: 3px 4px 8px 2px rgb(224, 224, 224, 0.25);
+}  
+.login-popup input[type=text],input[type=password]{
+    width: 35vw;
+    margin: 2px auto;
+    padding: 1vmax;
+    font-size: 1rem;
+    font-family: 'Barlow', sans-serif;
+    border-top: thin;
+    border-left: thin;
+    border-right: thin;
+    background-color: #ffffff;
+}
+.login-popup form{
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+}
+.login-popup button{
+    width: 28vw;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 1vh auto;
+    padding: 0.5vw;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.login-popup button:hover{
+    background-image: linear-gradient(rgba(148, 147, 147, 0.4) 0 0);
+    transition: 0.5s;
+}
+
+.login-popup h1{
+    text-align: center;
+    color: black;
+    margin: auto;
+    font-size: 4rem;
+    padding: 1em;
+}
+.login-popup p{
+    color: black;
+    text-align: left;
+    /* margin-left: 3.5vw; */
+    /* width: 20vh; */
+}   
+.login-popup hr{
+    opacity: 80%;
+    width: 40vw;
+    margin: 0 auto;
+}  
+.login-popup a{
+    color: rgb(151, 151, 151);
+    text-decoration: none;
+}
+.login-popup a:hover{
+    color: black;
+    transition: 0.5s;
+}
+
+.close{
+    min-width: 3vw;
+    margin: 0;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    padding: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+#forgot{
+    position: relative;
+    top: 2px;
+    left: 10vw
+}
+
+/* ------------upload form pop up ----------------------- */
+
+.upload-popup{
+    background-color: #ffffff;
+    width: 65vw;
+    height: 65vh;
+    margin: 0 auto;
+    position: absolute;
+    top: 20%;
+    left: 17%;
+    /* margin-top: 20vh; */
+    font-family: 'Barlow', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border-radius: 20px;
+    box-shadow: 3px 4px 8px 2px rgb(224, 224, 224, 0.25);
+} 
+.upload-popup h1{
+    text-align: center;
+    color: black;
+    margin: auto;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1em;
+}
+.upload-popup hr{
+    opacity: 80%;
+    width: 50vw;
+    margin: 0 auto;
+    margin-bottom: 4vh;
+} 
+.upload-popup label{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 1px 0 0 10vw;
+    z-index: 50;
+    display: block;
+}
+.upload-popup input[type=text],input[type=date],input[type=file]{
+    width: 35vw;
+    margin: auto;
+    padding: 1vmax;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Barlow', sans-serif;
+    border-top: thin;
+    border-left: thin;
+    border-right: thin;
+    background-color: #ffffff;
+    z-index: 50;
+}
+.upload-popup button{
+    width: 28vw;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 1vh auto;
+    padding: 0.9vw;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.upload-popup a{
+    min-width: 3vw;
+    margin: 0;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    padding: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.login-popup #no
+{
+    color: red;
+    text-align: center;
+} 
+/* @media(min-width: 800){
+    .upload-popup{
+        width: 60vw;
+        height: 85h;
+    }
+    .upload-popup h1{
+        font-size: 1.8rem;
+    }
+    .upload-popup hr{
+        margin-bottom: 2vh;
+    }
+} */

@@ -1,0 +1,185 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+
+/* info section */
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10em 2em 5em 2em; 
+}
+.info-info{
+    display:inline-block;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+}
+.info-title{
+    font-weight: 600;
+    font-size: 2.5rem;
+    padding-bottom: 5vmin;
+    /* margin-top: 2em; */
+}
+.info-brief{
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    text-align: left;
+}
+.info-img{
+    display: inline-flex;
+    width: 45vw;
+}
+
+/* certificate display section */
+h1{
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    display: block;
+    margin-left: 1em;
+    margin-bottom: 5vmin;
+}
+.certi-section{
+    display: grid;
+    grid-template-columns: repeat(3,100vw);
+    column-gap: 15px;
+    margin-top: 5vh;
+    width: 90vw;
+    grid-gap: 10px;
+    padding: 2em;
+    box-sizing: border-box;
+    height: 20vmax;
+}
+a{
+    text-decoration: none;
+}
+.certi-title{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: white;
+    margin-left: 5vw;
+    overflow: auto;
+    text-decoration: none;
+}
+/* .certi-title:active , .certi-title:visited, .certi-title:focus{
+    text-decoration: none;
+} */
+
+.certi-section {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+    }
+    .slides {
+        display: flex;
+        height: 100%;
+        width: 100%;
+    }   
+    .slide {
+        min-width: 100%;
+        position: relative;
+    }
+    .slide img {
+        width: 95vw;
+        height: 100%;
+        /* border-right: 10vmin solid black; */
+        border-radius: 20px;
+    }
+    .slide img:hover{
+        transform: scale(1.1);
+    }
+    .slide-controls {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #next-btn,
+    #prev-btn {
+        cursor: pointer;
+        background: transparent;
+        font-size: 30px;
+        border: none;
+        padding: 10px;
+        color: white;
+    }
+    #next-btn:focus,
+    #prev-btn:focus {
+        outline: none;
+    }
+    .slide-title {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        left: 1vw;
+    }
+    .certi-title{
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 5vw;
+        color: white;
+        text-decoration: none;
+    }
+
+/* contact us part */
+    #contact{
+        margin-top: 30vmax;
+        margin-bottom: 10vmax;
+        color: white;
+        font-family: 'Barlow', sans-serif;
+    }
+    p{
+        display: inline-block;
+        font-weight: 500;
+        font-size: 2vmax;
+        /* padding: 7vw; */
+        text-align: center;
+    }    
+    #cont{
+        color: white;
+        font-size: 3vw;
+        border: none;
+        background: transparent;
+        padding: 0px;
+        margin: 0;
+        margin-right: 0.5em;
+    }
+    .cont-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+/* resposive part */
+@media (max-width: 1000px){
+    .info{
+    flex-direction: column;
+    }
+    .info-img{
+        display: block;
+        width: 90vw;
+    }
+    .info-title{
+    font-size: 2rem;
+    margin-top: 2em;
+    }
+    .info-brief{
+        font-size: 1.2rem;
+        
+    }
+}
